@@ -9,12 +9,10 @@ def carre_radar(provincia,doc):
 
 provincia = input("Dime el nombre de una provincia: ")
 
-carreteras = carre_radar(provincia,doc)
-radares = carre_radar(provincia,doc)
+carreteras,radares = carre_radar(provincia,doc)
 
+for i in carreteras:
+	print ("Carreteras de",provincia,":",i)
+print ("Numero de radares:",radares)
 
-for i,x in zip(carreteras,radares):
-	print ("Nombre Carretera:",i)
-	print ("Numero de Radares:",x)
-	
 #//PROVINCIA/NOMBRE/../CARRETERA/DENOMINACION/text()
