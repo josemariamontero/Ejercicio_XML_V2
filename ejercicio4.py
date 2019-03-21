@@ -11,8 +11,6 @@ carretera = input("Dime el nombre de una carretera: ").upper()
 
 carreteras,radares = carre_provincias(carretera,doc) 
 
-
-
 for i in carreteras:
 	print (i)
 print ("Numero de radares:",radares)
